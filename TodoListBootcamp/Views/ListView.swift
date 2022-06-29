@@ -48,7 +48,9 @@ struct ListView_Previews: PreviewProvider {
         NavigationView {
             ListView()
         }
+        .preferredColorScheme(.dark)
         .environmentObject(ListViewModel())
+        .previewInterfaceOrientation(.portraitUpsideDown)
     }
 }
 
